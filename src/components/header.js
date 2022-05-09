@@ -6,10 +6,6 @@ const Header = ({ siteTitle }) => (
   <header>
     <Link
       to="/"
-      style={{
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-      }}
     >
       {siteTitle}
     </Link>
