@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import * as React from "react"
 
 
@@ -10,9 +11,11 @@ const IndexPage = () => (
     <Seo title="Home"/>
     <div>
       <h1>
-        Welcome to <b>my new Site!</b>
+        Hi, 
       </h1>
+      <p>Happy Hacking</p>
     </div>
+    <Link to = "/page-2">Go To Page 2</Link>
   </Layout>
 )
 
