@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import {menuData} from '../../data/menuData'
 import MenuButton from "../buttons/MenuButton"
+import MenuTooltip from "../tooltips/MenuTooltip"
 
 export default function Header() {
   return (
@@ -16,6 +17,7 @@ export default function Header() {
             <MenuButton item={item} key={index}/>
         ))}
       </MenuWrapper>
+      <MenuTooltip/>
     </Wrapper>
   )
 }
