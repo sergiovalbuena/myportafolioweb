@@ -17,7 +17,7 @@ export const menuData = [
     {
       title: "",
       icon: "/images/icons/account.svg",
-      link: "/account",
+      link: "/account2",
     },
     {
       title: "",

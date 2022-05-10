@@ -1,23 +1,39 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import {menuData} from '../../data/menuData'
+import { menuData } from "../../data/menuData"
 import MenuButton from "../buttons/MenuButton"
 import MenuTooltip from "../tooltips/MenuTooltip"
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  function handleClick(event) { 
+    setIsOpen(!isOpen)
+    event.preventDefault();
+    console.log(event);
+  }
+
   return (
-      <Wrapper>
-          <Link to='/'>
-              <img src="/images/logos/logo.svg" />
-              </Link>
+    <Wrapper>
+      <Link to="/">
+        <img src="/images/logos/logo.svg" alt='logo'/>
+      </Link>
       <MenuWrapper count={menuData.length}>
-        {menuData.map((item, index) => (
-            <MenuButton item={item} key={index}/>
-        ))}
+        {menuData.map((item, index) =>
+          item.link === "/account" ? (
+            <MenuButton
+              item={item}
+              key={index}
+              onClick={(event) => handleClick(event)}
+            />
+          ) : (
+            <MenuButton item={item} key={index} />
+          )
+        )}
       </MenuWrapper>
-      <MenuTooltip/>
+      <MenuTooltip isOpen={isOpen} />
     </Wrapper>
   )
 }
@@ -38,5 +54,3 @@ const MenuWrapper = styled.div`
   gap: 30px;
   grid-template-columns: repeat(${props => props.count}, auto);
 `
-
-
