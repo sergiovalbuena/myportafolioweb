@@ -10,8 +10,8 @@ export default function ContactButton(props) {
     <Link to="/page-2">
       <Wrapper>
         <IconWrapper>
-                  <Icon src="/images/icons/credit.svg" />
-                  <Ring src="images/icons/icon-ring.svg"/>
+          <Icon src="/images/icons/credit.svg" className="icon" />
+          <Ring src="images/icons/icon-ring.svg" />
         </IconWrapper>
         <TextWrapper>
           <Title>{title || "Contact Me"}</Title>
@@ -27,13 +27,29 @@ const Wrapper = styled.div`
   height: 77px;
   padding: 12px;
   background: linear-gradient(180deg, #fff 0%, #d9dfff 100%);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 20px 40px rgba(23, 0 102, 0.2),
-    inset 0px 0px 0px 0.5 rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 20px 40px rgba(23, 0, 102, 0.2),
+    inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   display: grid;
   grid-template-columns: 53px auto;
   align-items: center;
   gap: 20px;
+  
+  *, &{ //children, itself
+    transition:1s cubic-bezier(0.075, 0.82, 0.165, 1); //duration, delay, timing
+  }
+
+  :hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+      0px 30px 60px rgba(23, 0, 102, 0.5),
+      inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px) scale(1.1) rotate(1deg);
+
+    .icon{
+      transform: scale(1.2) ;
+    }
+  }
 `
 
 const IconWrapper = styled.div`
@@ -45,7 +61,11 @@ const IconWrapper = styled.div`
   justify-content: center;
   align-content: center;
   justify-self: center;
-  position:relative ;
+  position: relative;
+
+  ${Wrapper}:hover &{
+    filter: hue-rotate(10deg) brightness(150%) saturate(120%);
+  }
 `
 
 const Icon = styled.img`
@@ -53,14 +73,18 @@ const Icon = styled.img`
   height: 29px;
 `
 const Ring = styled.img`
-    position: absolute ;
-    top: -15px;
-    left: -16px;
+  position: absolute;
+  top: -15px;
+  left: -16px;
+
+  ${Wrapper}:hover & {
+    transform: rotate(30deg) scale(1.2) translate(1px,1px) ;
+  }
 `
 
 const TextWrapper = styled.div`
-    display: grid;
-    gap: 4px;
+  display: grid;
+  gap: 4px;
 `
 
 const Title = styled(Caption2)`
