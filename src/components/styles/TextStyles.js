@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
+
 export const H1 = styled.h1`
     font-weight:bold ;
     font-size:60px ;
 
     @media (max-width: 450px) {
         font-size: 34px ;
-    }
+    } 
+
+    line-height: 1.2 ;
+
 `
 export const H2 = styled.h2`
     font-weight:bold ;
@@ -26,6 +30,7 @@ export const BodyIntro = styled.p`
     font-weight:500 ;
     font-size:24px ;
     line-height:140% ;
+    
 `
 export const BodyMain = styled.p`
     font-weight: normal ;

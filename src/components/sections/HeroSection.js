@@ -15,7 +15,7 @@ function HeroSection() {
       <WaveGround />
       <ContentWrapper>
         <TextWrapper>
-          <Title>Hi, I'm <span>Sergio</span> </Title>
+          <Title>Hi, I'm  <br /> <span>Sergio</span> </Title>
                   <Description>Happy Hacking </Description>
           <ContactButton 
             //title='Contactame ahora'
@@ -50,6 +50,7 @@ const Wrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
+  //background: url('../../') ;
   max-width: 1234px;
   height: 950px;
   margin: 0 auto;
@@ -87,7 +88,8 @@ const TextWrapper = styled.div`
 `
 
 const Title = styled(H1)`
-  color: ${themes.dark.text1};
+  //color: ${themes.light.text1} ;
+  
   background: linear-gradient(180deg, #730040 0%, #301cbe 100%) ;
   background-clip: text ;
   -webkit-background-clip: text;
@@ -97,7 +99,7 @@ const Title = styled(H1)`
     background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%) ;
   background-clip: text ;
   -webkit-background-clip: text;
-  color: transparent;
+  //color: transparent;
   }
 
   @media (max-width: 450px) {

@@ -12,10 +12,10 @@ export default function MenuButton(props) {
       </MenuItem>
     </Link>
   )
-}
+};
 
 const MenuItem = styled.div`
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,0.7);
     display: grid ;
     grid-template-columns: 24px auto ;
     //gap: 10px;
