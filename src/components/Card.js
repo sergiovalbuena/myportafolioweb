@@ -5,11 +5,13 @@ import { Caption, H3 } from "./styles/TextStyles"
 
 export default function Card(props) {
   return (
+
       <Wrapper src={props.image}>
           <Background src={props.image}/>
       <Title>{props.title}</Title>
       <Text>{props.text}</Text>
-    </Wrapper>
+      </Wrapper>
+
   )
 }
 
