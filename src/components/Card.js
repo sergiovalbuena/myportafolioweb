@@ -5,7 +5,6 @@ import { Caption, H3 } from "./styles/TextStyles"
 
 export default function Card(props) {
   return (
-
       <Wrapper src={props.image}>
           <Background src={props.image}/>
       <Title>{props.title}</Title>
@@ -44,6 +43,7 @@ const Wrapper = styled.div`
   :hover{
       transform: scale(1.1, 1.1) ;
       box-shadow: 0 30px 60px rgba(0,0,0,.5) ;
+      animation: ${animation} 3s  .5s forwards cubic-bezier(0.075, 0.82, 0.265, 1);
   }
 
 `

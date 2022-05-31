@@ -48,7 +48,7 @@ const Title = styled(H2)`
   }
   opacity: 0;
 
-  animation: ${animation} 1s  .5s forwards cubic-bezier(0.075, 0.82, 0.265, 1);
+  
   //animation-duration: ;
   //animation-delay: ;
   //animation-fill-mode: ;
