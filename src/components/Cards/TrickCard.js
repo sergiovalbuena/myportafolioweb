@@ -7,12 +7,14 @@ import { themes } from "../styles/ColorStyles"
 
 export default function TrickProjectCard(props) {
   return (
+      <Link to={props.link} target="_blank" >
     <Wrapper src={props.image}>
       <Background src={props.image} />
       <WrapperText>
           <Text>{props.text}</Text>
         </WrapperText>
     </Wrapper>
+        </Link>
   )
 }
 

@@ -10,7 +10,11 @@ export default function CardSection() {
         <ProjectCard
           title="Yoga Site"
           text="Yoga first project for a Colombian Yoguini"
-          image='/images/logos/ae-logo.svg'
+          image='/images/screenShots/asanas.png'
+          link="https://yogananda.netlify.app"
+          logo1 = "/images/logos/react-logo.svg"
+          logo2 = "/images/logos/js-logo.svg"
+          logo3 = "/images/logos/figma-logo.svg"
           //image={require("")}
         />
       </div>
@@ -30,15 +34,41 @@ export default function CardSection() {
       </div>
       <div>
         <ProjectCard
+          title="La Taqueria"
+          text="A BOH App. Make tasks easier"
+          link =""
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <ProjectCard
           title="Prep List"
           text="https://lataqueria-admin.netlify.app/signin"
+          link =""
           //image={require("")}
         />
       </div>
       <div>
         <ProjectCard
           title="RabbitLand"
-          text="Aca seria la descripcion"
+          text="Learning animation on CSS"
+          link="https://rabbitland.netlify.app"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <ProjectCard
+          title="Lego-Super Man"
+          text="Learning and applying CSS transitions"
+          link="https://animationcsssuperman.netlify.app"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <ProjectCard
+          title="Batatabit"
+          text="Learning and applying CSS resposive"
+          link="https://batatabit-responsive.netlify.app/#plans"
           //image={require("")}
         />
       </div>

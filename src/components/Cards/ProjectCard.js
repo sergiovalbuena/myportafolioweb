@@ -8,12 +8,18 @@ import { themes } from "../styles/ColorStyles"
 export default function ProjectCard(props) {
   return (
     <Wrapper src={props.image}>
-      <Link>
-        <Background src={props.image} />
+      <Link to={ props.link} target="_blank" >
+        <Background src={props.image} 
+        />
         <WrapperText>
           <Title>{props.title}</Title>
           <Text>{props.text}</Text>
         </WrapperText>
+        <WrapperIcons>
+          <Logo src={ props.logo1 }></Logo>
+          <Logo src={ props.logo2 }></Logo>
+          <Logo src={ props.logo3 }></Logo>
+        </WrapperIcons>
       </Link>
     </Wrapper>
   )
@@ -55,7 +61,7 @@ const Wrapper = styled.div`
 
 const Background = styled.img`
   position: absolute;
-  top: 50px;
+  top: 90px;
   left: 0px;
   //height: 100%;
   width: 100%;
@@ -105,4 +111,30 @@ const Text = styled(Caption)`
   @media (prefers-color-scheme: light) {
     color: ${themes.light.text1};
   }
+`
+
+const WrapperIcons = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: ${themes.light.backgroundColor} ;
+  @media(prefers-color-scheme: dark){
+    background-color:${themes.dark.backgroundColor} ;
+  }
+  width: 100%;
+  border-radius: 0 0 20px 20px ;
+  height: 50px;
+  
+
+  :hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  @media (prefers-color-scheme: light) {
+    color: ${themes.light.text1};
+  }
+`
+
+const Logo = styled.img`
+  height: 120% ;
+  padding: 0 5px;
 `
