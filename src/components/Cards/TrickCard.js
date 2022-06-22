@@ -8,7 +8,10 @@ import { themes } from "../styles/ColorStyles"
 export default function TrickProjectCard(props) {
   return (
     <Wrapper src={props.image}>
-        <Background src={props.image} />
+      <Background src={props.image} />
+      <WrapperText>
+          <Text>{props.text}</Text>
+        </WrapperText>
     </Wrapper>
   )
 }
@@ -25,8 +28,8 @@ const animation = keyframes`
 `
 
 const Wrapper = styled.div`
-  width: 220px;
-  height: 100px;
+  width: 250px;
+  height: 80px;
   overflow: hidden; //make a mask for the img
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
@@ -36,6 +39,7 @@ const Wrapper = styled.div`
   animation: ${animation} 1s 0.5s forwards cubic-bezier(0.075, 0.82, 0.265, 1);
   opacity: 0;
   padding:0;
+  background-color: rgba(0,0,0,.1) ;
 
   :hover {
     //transform: scale(2, 2);
@@ -61,6 +65,36 @@ const Background = styled.img`
     transform: scale(2, 2);
     //transform: translateY(-20px);
   }
-
-  
 `
+
+
+const WrapperText = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  width: 100%;
+  border-radius: 0 0 20px 20px ;
+  
+
+  :hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  @media (prefers-color-scheme: light) {
+    color: ${themes.light.text1};
+  }
+`
+
+const Text = styled(Caption)`
+  position: absolute ;
+  left: auto;
+  top: 0;
+  color: ${themes.dark.text1};
+  margin-left: 10px;
+  margin-top: 5px ;
+  @media (prefers-color-scheme: light) {
+    color: ${themes.light.text1};
+  }
+`
+

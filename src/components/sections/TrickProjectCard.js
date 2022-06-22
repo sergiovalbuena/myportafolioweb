@@ -9,32 +9,49 @@ export default function SmallCardSection() {
     <CardWrapper>
       <div>
         <TrickCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/js-logo.svg"
+          text="API and DOM Manipulation"
+
 
           //image={require("")}
         />
+   
       </div>
       <div>
         <TrickCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/js-logo.svg"
+          text = "Object Oriented. JavaScript"
           //image={require("")}
         />
       </div>
       <div>
         <TrickCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/react-logo.svg"
+          text="React HandBook"
           //image={require("")}
         />
       </div>
       <div>
         <TrickCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/nodejs-logo.svg"
+          text="Node JS. Theory"
           //image={require("")}
         />
       </div>
       <div>
         <TrickCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/react-logo.svg"
+          text="Frontend Web3.0"
+          //image={require("")}
+        />
+        <TrickCard
+          image="/images/logos/js-logo.svg"
+          text="FakeStore"
+          //image={require("")}
+        />
+        <TrickCard
+          image="/images/logos/terminal-logo.svg"
+          text="Terminal"
           //image={require("")}
         />
       </div>

@@ -8,32 +8,68 @@ export default function SmallCardSection() {
     <CardWrapper>
       <div>
         <SmallProjectCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/js-logo.svg"
 
           //image={require("")}
         />
       </div>
       <div>
         <SmallProjectCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/react-logo.svg"
           //image={require("")}
         />
       </div>
       <div>
         <SmallProjectCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/figma-logo.svg"
           //image={require("")}
         />
       </div>
       <div>
         <SmallProjectCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/xd-logo.svg"
           //image={require("")}
         />
       </div>
       <div>
         <SmallProjectCard
-          image="/images/logos/ae-logo.svg"
+          image="/images/logos/terminal-logo.svg"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <SmallProjectCard
+          image="/images/logos/firebase-logo.svg"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <SmallProjectCard
+          image="/images/logos/mongo-logo.svg"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <SmallProjectCard
+          image="/images/logos/arduino-logo.svg"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <SmallProjectCard
+          image="/images/logos/csharp-logo.svg"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <SmallProjectCard
+          image="/images/logos/unity-logo.svg"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <SmallProjectCard
+          image="/images/logos/nodejs-logo.svg"
           //image={require("")}
         />
       </div>
