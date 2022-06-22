@@ -74,8 +74,10 @@ const WrapperText = styled.div`
     position: absolute ;
     left: 0;
     top:0;
-  background-color: rgba(255, 255, 255, 0.9) ;
-  
+  background-color: ${themes.light.backgroundColor} ;
+  @media(prefers-color-scheme: dark){
+    background-color:${themes.dark.backgroundColor} ;
+  }
   width: 100% ;
   border-radius:20px ;
   height: 100px;

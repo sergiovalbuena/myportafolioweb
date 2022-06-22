@@ -53,7 +53,7 @@ const Wrapper = styled.div`
 
 const ContentWrapper = styled.div`
   //background: url('../../') ;
-  max-width: 1234px;
+  max-width: 1294px;
   height: 950px;
   margin: 0 auto;
   padding: 200px 30px;
@@ -90,7 +90,6 @@ const TextWrapper = styled.div`
 `
 
 const Title = styled(H1)`
-  //color: ${themes.light.text1} ;
   
   background: linear-gradient(180deg, #730040 0%, #301cbe 100%) ;
   background-clip: text ;

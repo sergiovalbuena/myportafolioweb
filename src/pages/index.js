@@ -9,7 +9,7 @@ import SmallCardSection from "../components/sections/SmallCardSection"
 import HeroSection from "../components/sections/HeroSection"
 import { H2, H3 } from "../components/styles/TextStyles"
 import TrickProjectCard from "../components/sections/TrickProjectCard"
-
+import { themes } from "../components/styles/ColorStyles"
 
 const IndexPage = () => (
   <Layout>
@@ -21,18 +21,22 @@ const IndexPage = () => (
     <SmallCardSection />
     <SectionsTitle>Tips, Trick, and more</SectionsTitle>
     <TrickProjectCard />
-  
-  
   </Layout>
-
-
 )
 
 export default IndexPage
 
 const SectionsTitle = styled(H2)`
- margin-left: 40px;
+  color: ${themes.light.text1};
+  @media (prefers-color-scheme: dark) {
+    color: ${themes.dark.text1};
+  }
+  margin-left: 40px;
 `
 const SectionsSubtitle = styled(H3)`
- margin-left: 40px;
+  margin-left: 40px;
+  color: ${themes.light.text1};
+  @media (prefers-color-scheme: dark) {
+    color: ${themes.dark.text1};
+  }
 `

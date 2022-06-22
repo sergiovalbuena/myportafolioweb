@@ -55,6 +55,7 @@ const Background = styled.img`
   justify-content: center ;
   //height: 100%;
   height: 100%;
+  //margin-bottom:15px ;
   z-index: -1;
   background: url(${props => props.image});
   background-size: cover;
@@ -72,7 +73,10 @@ const WrapperText = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: ${themes.light.backgroundColor} ;
+  @media(prefers-color-scheme: dark){
+    background-color:${themes.dark.backgroundColor} ;
+  }
 
   width: 100%;
   border-radius: 0 0 20px 20px ;

@@ -44,17 +44,22 @@ export default function SmallCardSection() {
           text="Frontend Web3.0"
           //image={require("")}
         />
+          </div>
+      <div>
         <TrickCard
           image="/images/logos/js-logo.svg"
           text="FakeStore"
           //image={require("")}
         />
+            </div>
+      <div>
         <TrickCard
           image="/images/logos/terminal-logo.svg"
           text="Terminal"
           //image={require("")}
         />
-      </div>
+            </div>
+  
     </CardWrapper>
   )
 }
@@ -68,7 +73,7 @@ const CardWrapper = styled.div`
   div {
     display: inline-block;
     text-align: center;
-    padding: 14px;
+    padding: 15px;
     text-decoration: none;
   }
   div:hover {
