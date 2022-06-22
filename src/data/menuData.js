@@ -1,44 +1,39 @@
 export const menuData = [
     {
-      title: "About",
-      icon: "/images/icons/courses.svg",
+      title: "About me",
+      icon: "/images/icons/livestreams.svg",
       link: "/about",
     },
     {
       title: "Projects",
-      icon: "/images/icons/courses.svg",
+      icon: "/images/icons/book.svg",
       link: "/projects",
     },
     {
       title: "Tips",
-      icon: "/images/icons/courses.svg",
+      icon: "/images/icons/code.svg",
       link: "/tips",
     },
     {
       title: "",
-      icon: "/images/icons/account.svg",
-      link: "/account2",
-    },
-    {
-      title: "",
-      icon: "/images/icons/account.svg",
+      icon: "/images/icons/link.svg",
       link: "/account",
     },
 ]
   
 export const tooltipData = [
   {
-    title: "Profile",
+    title: "GitHub",
     icon: "/images/icons/profile.svg",
     link: "/profile",
   },
   {
-    title: "Settings",
+    title: "Behance",
     icon: "/images/icons/settings.svg",
     link: "/settings",
   },
   {
-    title: "Sign Out",
+    title: "PenCode",
     icon: "/images/icons/profile.svg",
     link: "/signout",
   },

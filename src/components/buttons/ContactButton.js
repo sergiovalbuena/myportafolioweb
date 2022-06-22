@@ -10,12 +10,12 @@ export default function ContactButton(props) {
     <Link to="/page-2">
       <Wrapper>
         <IconWrapper>
-          <Icon src="/images/icons/credit.svg" className="icon" />
-          <Ring src="images/icons/icon-ring.svg" />
+          <Icon src="/images/icons/profile.svg" className="icon" />
+          {/* <Ring src="images/icons/icon-ring.svg" /> */}
         </IconWrapper>
         <TextWrapper>
           <Title>{title || "Contact Me"}</Title>
-          <Subtitle>{subtitle || "Let's code the world"} </Subtitle>
+          <Subtitle>{subtitle || "Let's make ux the world"} </Subtitle>
         </TextWrapper>
       </Wrapper>
     </Link>
@@ -64,7 +64,8 @@ const IconWrapper = styled.div`
   position: relative;
 
   ${Wrapper}:hover &{
-    filter: hue-rotate(10deg) brightness(150%) saturate(120%);
+    background: green;
+    filter: hue-rotate(30deg) brightness(120%) saturate(180%);
   }
 `
 

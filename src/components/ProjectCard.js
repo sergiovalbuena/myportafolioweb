@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { keyframes } from "styled-components"
 import { Caption, H3 } from "./styles/TextStyles"
 
-export default function Card(props) {
+export default function ProjectCard(props) {
   return (
       <Wrapper src={props.image}>
           <Background src={props.image}/>
@@ -13,7 +13,6 @@ export default function Card(props) {
 
   )
 }
-
 
 
 const animation = keyframes`
@@ -29,10 +28,11 @@ const animation = keyframes`
 
 
 const Wrapper = styled.div`
-  width: 260px;
+  width: 360px;
   height: 420px;
   position: relative;
   overflow: hidden; //make a mask for the img
+  margin: 0 15px;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   display: grid ;
@@ -60,6 +60,7 @@ const Background = styled.img`
 
       :hover{
       transform: translateY(-20px) ;
+      
   }
 `
 

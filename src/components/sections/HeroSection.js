@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import styled from "styled-components"
 import { H1, MediumText } from "../styles/TextStyles"
 import { themes } from "../styles/ColorStyles"
@@ -16,12 +16,12 @@ function HeroSection() {
       <ContentWrapper>
         <TextWrapper>
           <Title>Hi, I'm  <br /> <span>Sergio</span> </Title>
-                  <Description>Happy Hacking </Description>
+                  <Description>An UX Designer that love to code.</Description>
           <ContactButton 
             //title='Contactame ahora'
             //subtitle='Codificando el mundo'
                   />
-          <Link to="/page-2">Go To Page 2</Link>
+          {/* <Link to="/page-2">Go To Page 2</Link> */}
         </TextWrapper>
         <MockupAnimation />
       </ContentWrapper>
@@ -107,4 +107,8 @@ const Title = styled(H1)`
   }
 
 `
-const Description = styled(MediumText)``
+const Description = styled(MediumText)`
+  font-size: 16px;
+  font-weight: 600 ;
+
+`

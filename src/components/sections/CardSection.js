@@ -1,66 +1,47 @@
 import React from "react"
 import styled from "styled-components"
-import Card from "../Card"
+import ProjectCard from "../ProjectCard"
 
 export default function CardSection() {
   return (
     <CardWrapper>
+      
       <div>
-        <Card
-          title="Proyecto # 1"
+        <ProjectCard
+          title="Yoga Site"
           text="Aca seria la descripcion"
           //image={require("")}
         />
       </div>
       <div>
-        <Card
-          title="Proyecto # 2"
+        <ProjectCard
+          title="Dogs API"
           text="Aca seria la descripcion"
           //image={require("")}
         />
       </div>
       <div>
-        <Card
-          title="Proyecto # 2"
+        <ProjectCard
+          title="Movies API"
           text="Aca seria la descripcion"
           //image={require("")}
         />
       </div>
       <div>
-        <Card
-          title="Proyecto # 2"
-          text="Aca seria la descripcion"
+        <ProjectCard
+          title="Prep List"
+          text="https://lataqueria-admin.netlify.app/signin"
           //image={require("")}
         />
       </div>
       <div>
-        <Card
-          title="Proyecto # 2"
+        <ProjectCard
+          title="RabbitLand"
           text="Aca seria la descripcion"
           //image={require("")}
         />
       </div>
-      <div>
-        <Card
-          title="Proyecto # 2"
-          text="Aca seria la descripcion"
-          //image={require("")}
-        />
-      </div>
-      <div>
-        <Card
-          title="Proyecto # 2"
-          text="Aca seria la descripcion"
-          //image={require("")}
-        />
-      </div>
-      <div>
-        <Card
-          title="Proyecto # 2"
-          text="Aca seria la descripcion"
-          //image={require("")}
-        />
-      </div>
+     
     </CardWrapper>
   )
 }
@@ -78,6 +59,6 @@ const CardWrapper = styled.div`
     text-decoration: none;
   }
   div:hover{
-      background-color:yellow ;
+      //background-color:yellow ;
   }
 `
