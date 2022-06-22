@@ -33,7 +33,7 @@ const Wrapper = styled.div`
 `
 const ContentWrapper = styled.div`
   margin: 0;
-  //max-width: 500px ;
+  max-width: 500px ;
   padding: 150px 50px;
   text-align: center;
   background: url("/images/waves/tutorial-wave5.svg");

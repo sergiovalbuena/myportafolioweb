@@ -1,48 +1,42 @@
 import React from "react"
 import styled from "styled-components"
 import ProjectCard from "../Cards/ProjectCard"
+import SmallProjectCard from "../Cards/SmallProjectCard"
 
-export default function CardSection() {
+export default function SmallCardSection() {
   return (
     <CardWrapper>
-      
       <div>
-        <ProjectCard
-          title="Yoga Site"
-          text="Yoga first project for a Colombian Yoguini"
-          image='/images/logos/ae-logo.svg'
+        <SmallProjectCard
+          image="/images/logos/ae-logo.svg"
+
           //image={require("")}
         />
       </div>
       <div>
-        <ProjectCard
-          title="Cats API"
-          text="Playing with API and lovely kitties"
+        <SmallProjectCard
+          image="/images/logos/ae-logo.svg"
           //image={require("")}
         />
       </div>
       <div>
-        <ProjectCard
-          title="Movies API"
-          text="Aca seria la descripcion"
+        <SmallProjectCard
+          image="/images/logos/ae-logo.svg"
           //image={require("")}
         />
       </div>
       <div>
-        <ProjectCard
-          title="Prep List"
-          text="https://lataqueria-admin.netlify.app/signin"
+        <SmallProjectCard
+          image="/images/logos/ae-logo.svg"
           //image={require("")}
         />
       </div>
       <div>
-        <ProjectCard
-          title="RabbitLand"
-          text="Aca seria la descripcion"
+        <SmallProjectCard
+          image="/images/logos/ae-logo.svg"
           //image={require("")}
         />
       </div>
-     
     </CardWrapper>
   )
 }
@@ -52,6 +46,7 @@ const CardWrapper = styled.div`
   padding: 10px 20px;
   overflow: auto;
   white-space: nowrap;
+  margin-bottom:50px ;
 
   div {
     display: inline-block;
@@ -59,7 +54,7 @@ const CardWrapper = styled.div`
     padding: 14px;
     text-decoration: none;
   }
-  div:hover{
-      //background-color:yellow ;
+  div:hover {
+    //background-color:yellow ;
   }
 `

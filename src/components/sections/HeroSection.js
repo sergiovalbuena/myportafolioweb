@@ -15,8 +15,10 @@ function HeroSection() {
       <WaveGround />
       <ContentWrapper>
         <TextWrapper>
-          <Title>Hi, I'm  <br /> <span>Sergio</span> </Title>
-                  <Description>An UX Designer that love to code.</Description>
+          <Title>Hi👋🏼, I'm  <br /> <span>Sergio</span> </Title>
+          <Description>An UX Designer and
+             <br />
+             Frontend Developer👨🏻‍💻.</Description>
           <ContactButton 
             //title='Contactame ahora'
             //subtitle='Codificando el mundo'

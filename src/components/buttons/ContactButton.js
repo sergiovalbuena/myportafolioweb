@@ -1,13 +1,13 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import { Caption2, SmallText } from "../styles/TextStyles"
+import { Caption2, SmallText, SmallText2 } from "../styles/TextStyles"
 
 export default function ContactButton(props) {
   const { title, subtitle } = props //deconstructing props
 
   return (
-    <Link to="/page-2">
+    <Link to="mailto:iosergio.valbuena@gmail.com">
       <Wrapper>
         <IconWrapper>
           <Icon src="/images/icons/profile.svg" className="icon" />
@@ -15,12 +15,14 @@ export default function ContactButton(props) {
         </IconWrapper>
         <TextWrapper>
           <Title>{title || "Contact Me"}</Title>
-          <Subtitle>{subtitle || "Let's make ux the world"} </Subtitle>
+          <Subtitle>{subtitle || "Let's code our world"} </Subtitle>
         </TextWrapper>
       </Wrapper>
     </Link>
   )
 }
+
+
 
 const Wrapper = styled.div`
   width: 280px;
@@ -92,7 +94,7 @@ const Title = styled(Caption2)`
   color: black;
 `
 
-const Subtitle = styled(SmallText)`
+const Subtitle = styled(SmallText2)`
   color: black;
   opacity: 0.7;
 `
