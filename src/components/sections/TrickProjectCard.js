@@ -41,6 +41,14 @@ export default function SmallCardSection() {
       </div>
       <div>
         <TrickCard
+          link="https://2t70zu.csb.app"
+          image="/images/logos/nodejs-logo.svg"
+          text="DOM Manipulation"
+          //image={require("")}
+        />
+      </div>
+      <div>
+        <TrickCard
           image="/images/logos/react-logo.svg"
           text="Frontend Web3.0"
           //image={require("")}

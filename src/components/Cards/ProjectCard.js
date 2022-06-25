@@ -38,7 +38,7 @@ const animation = keyframes`
 
 const Wrapper = styled.div`
   width: 360px;
-  height: 420px;
+  height: 520px;
   position: relative;
   overflow: hidden; //make a mask for the img
   margin: 0 15px 45px;
