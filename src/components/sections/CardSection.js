@@ -20,10 +20,10 @@ export default function CardSection() {
       </div>
       <div>
         <ProjectCard
-          title="Cats API"
+          title="Rick & Morty API"
           text="Playing with API and lovely kitties"
           image='/images/screenShots/moviesAPI.png'
-          link="https://google.com"
+          link="https://sergiovalbuena.github.io/react-rick-and-morty/"
           logo2 = "/images/logos/js-logo.svg"
           logo3 = "/images/logos/figma-logo.svg"
           //image={require("")}
