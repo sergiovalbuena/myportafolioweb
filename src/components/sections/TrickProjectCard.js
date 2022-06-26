@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import ProjectCard from "../Cards/ProjectCard"
 
 import TrickCard from "../Cards/TrickCard"
 
